@@ -13,6 +13,4 @@ This will return a $0$ or a $1$. It will return $1$ if $n$ is prime or $n=1$. If
 
 ## How do you use $\cos$ without using `math.cos()`?
 Using a Taylor series:
-$$
-\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \frac{x^8}{8!} - ...
-$$
+$$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \frac{x^8}{8!} - ...$$
