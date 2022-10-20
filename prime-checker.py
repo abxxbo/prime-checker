@@ -21,6 +21,10 @@ class Math:
 
     return j
 
+  # Floor n.
+  def floor(n) -> int:
+    return int(n)
+
 
   # self explanatory.
   def cos(x) -> float:
@@ -33,3 +37,17 @@ class Math:
       k += (Math.exp(-1,_k)/Math.fac((2*_k)))*(Math.exp(x, 2*_k))
 
     return k
+
+
+def f(x):
+  try:
+    return Math.floor(Math.exp((Math.cos(((Math.fac(x-1)+1)/x)*PI)), 2))
+  except OverflowError:
+    print(f"Woops! {n} is too big!")
+    sys.exit(4)
+
+match f(n):
+  case 1:
+    print(f"{n} is prime!")
+  case _:
+    print(f"{n} is composite")
